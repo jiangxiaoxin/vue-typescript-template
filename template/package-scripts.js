@@ -8,7 +8,6 @@ module.exports = {
       default: 'webpack.dev',
       dev: 'webpack-dev-server --inline --progress --config build/webpack.dev.conf.js'
     },
-    {{#if_or unit e2e}}
     test: {
       {{#if_eq runner "jest"}}
       unit: 'jest --config test/unit/jest.conf.js --coverage',
@@ -20,7 +19,6 @@ module.exports = {
       e2e: 'node test/e2e/runner.js'
       {{/e2e}}
     }
-    {{/if_or}}
     {{#lint}}
     lint: 'eslint --ext .js,.vue src{{#unit}} test/unit{{/unit}}{{#e2e}} test/e2e/specs{{/e2e}}',
     {{/lint}}
