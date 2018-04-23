@@ -11,9 +11,6 @@
     Inspired by official <a href="https://github.com/vuejs-templates/webpack">Vue.js Webpack template</a>
   </span>
   </br>
-  <sub>
-    Made with ❤️ by <a href="https://github.com/w3tecch">w3tech</a>, <a href="https://twitter.com/rkleger">Robert Kleger</a> and <a href="https://github.com/w3tecch/vue-typescript-template/graphs/contributors">contributors</a>
-  </sub>
 </p>
 
 <br />
