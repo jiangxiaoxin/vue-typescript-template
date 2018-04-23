@@ -15,7 +15,7 @@ module.exports = {
       {{#if_eq runner "karma"}}
       unit: '"cross-env BABEL_ENV=test karma start test/unit/karma.conf.js --single-run',
       {{/if_eq}}
-      {#e2e}}
+      {{#e2e}}
       e2e: 'node test/e2e/runner.js'
       {{/e2e}}
     }
