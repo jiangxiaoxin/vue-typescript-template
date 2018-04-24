@@ -5,24 +5,7 @@
   "author": "{{ author }}",
   "private": true,
   "scripts": {
-    "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
-    "start": "npm run dev",
-    {{#if_eq runner "jest"}}
-    "unit": "jest --config test/unit/jest.conf.js --coverage",
-    {{/if_eq}}
-    {{#if_eq runner "karma"}}
-    "unit": "cross-env BABEL_ENV=test karma start test/unit/karma.conf.js --single-run",
-    {{/if_eq}}
-    {{#e2e}}
-    "e2e": "node test/e2e/runner.js",
-    {{/e2e}}
-    {{#if_or unit e2e}}
-    "test": "{{#unit}}npm run unit{{/unit}}{{#unit}}{{#e2e}} && {{/e2e}}{{/unit}}{{#e2e}}npm run e2e{{/e2e}}",
-    {{/if_or}}
-    {{#lint}}
-    "lint": "eslint --ext .js,.vue src{{#unit}} test/unit{{/unit}}{{#e2e}} test/e2e/specs{{/e2e}}",
-    {{/lint}}
-    "build": "node build/build.js"
+    "start": "nps"
   },
   "dependencies": {
     "vue": "^2.5.2"{{#router}},
@@ -56,6 +39,8 @@
     "html-webpack-plugin": "^2.30.1",
     "webpack-bundle-analyzer": "^2.9.0",
     "node-notifier": "^5.1.2",
+    "nps": "^5.9.0",
+    "nps-utils": "^1.5.0",
     "postcss-import": "^11.0.0",
     "postcss-loader": "^2.0.8",
     "postcss-url": "^7.2.1",
