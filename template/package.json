@@ -30,6 +30,9 @@
   },
   "devDependencies": {
     "@vue/cli-plugin-typescript": "^3.0.0-beta.6",
+    {{#if_eq runner "jest"}}
+    "@vue/cli-plugin-unit-jest": "^3.0.0-beta.6",
+    {{/if_eq}}
     "@vue/cli-service": "^3.0.0-beta.6",
     {{#if_eq runner "jest"}}
     "jest": "^22.0.4",

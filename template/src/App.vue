@@ -19,7 +19,7 @@ export default {
   components: {
     HelloWorld
   }{{/router}}
-}
+};
 </script>
 
 <style>

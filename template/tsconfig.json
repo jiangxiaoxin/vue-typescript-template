@@ -1,29 +1,37 @@
 {
-  "compileOnSave": false,
   "compilerOptions": {
     "target": "es5",
     "module": "es6",
-    "emitDecoratorMetadata": true,
-    "experimentalDecorators": true,
-    "moduleResolution": "node",
-    "allowJs": true,
-    "sourceRoot": "src",
-    "importHelpers": true,
-    "lib": [
-      "es2017", "dom"
-    ],
-    "pretty": true,
     "strict": true,
-    "noImplicitAny": false,
-    "noUnusedLocals": true,
-    "noImplicitReturns": true,
-    "noUnusedParameters": true,
-    "suppressImplicitAnyIndexErrors": true,
-    "suppressExcessPropertyErrors": true,
+    "jsx": "preserve",
+    "importHelpers": true,
+    "moduleResolution": "node",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "allowSyntheticDefaultImports": true,
+    "strictPropertyInitialization": false,
+    "sourceMap": true,
+    "pretty": true,
+    "baseUrl": ".",
+    "lib": [
+      "es2017",
+      "dom"
+    ],
+    "types": [
+      "node"
+    ],
+    "paths": {
+      "@/*": [
+        "src/*"
+      ]
+    }
   },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.vue",
+    "tests/**/*.ts"
+  ],
   "exclude": [
-    "node_modules",
-    "dist",
-    "static"
+    "node_modules"
   ]
 }
