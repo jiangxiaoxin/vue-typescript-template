@@ -1,13 +1,38 @@
 {
-  "name": "vue-cli-template-webpack",
-  "version": "1.3.1",
+  "name": "vue-typescript-template",
+  "version": "0.0.1",
   "license": "MIT",
   "description": "A full-featured Webpack setup with hot-reload, lint-on-save, unit testing & css extraction.",
+  "repository": "git+ssh://git@github.com:w3tecch/vue-typescript-boilerplate.git",
+  "contributors": [
+    {
+      "name": "Robert Kleger",
+      "email": "",
+      "url": "https://github.com/DaNautilus"
+    }
+  ],
+  "keywords": [
+    "Vue.js",
+    "TypeScript",
+    "Webpack",
+    "boilerplate",
+    "skeleton",
+    "template",
+    "w3tec.ch"
+  ],
+  "engines": {
+    "node": ">= 6.0.0"
+  },
+  "homepage": "https://github.com/w3tecch/vue-typescript-boilerplate#readme",
+  "author": "w3tec.ch <info@w3tec.ch>",
   "scripts": {
+    "start": "nps",
     "docs": "cd docs && gitbook serve",
     "docs:deploy": "bash ./deploy-docs.sh"
   },
   "devDependencies": {
+    "nps": "^5.9.0",
+    "nps-utils": "^1.5.0",
     "vue-cli": "^2.8.1"
   }
 }

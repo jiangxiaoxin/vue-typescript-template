@@ -77,29 +77,7 @@ module.exports = {
     lint: {
       when: 'isNotTest',
       type: 'confirm',
-      message: 'Use ESLint to lint your code?',
-    },
-    lintConfig: {
-      when: 'isNotTest && lint',
-      type: 'list',
-      message: 'Pick an ESLint preset',
-      choices: [
-        {
-          name: 'Standard (https://github.com/standard/standard)',
-          value: 'standard',
-          short: 'Standard',
-        },
-        {
-          name: 'Airbnb (https://github.com/airbnb/javascript)',
-          value: 'airbnb',
-          short: 'Airbnb',
-        },
-        {
-          name: 'none (configure it yourself)',
-          value: 'none',
-          short: 'none',
-        },
-      ],
+      message: 'Use TSLint to lint your code?',
     },
     unit: {
       when: 'isNotTest',
@@ -140,14 +118,14 @@ module.exports = {
         'Should we run `npm install` for you after the project has been created? (recommended)',
       choices: [
         {
-          name: 'Yes, use NPM',
-          value: 'npm',
-          short: 'npm',
-        },
-        {
           name: 'Yes, use Yarn',
           value: 'yarn',
           short: 'yarn',
+        },
+        {
+          name: 'Yes, use NPM',
+          value: 'npm',
+          short: 'npm',
         },
         {
           name: 'No, I will handle that myself',
@@ -158,8 +136,7 @@ module.exports = {
     },
   },
   filters: {
-    '.eslintrc.js': 'lint',
-    '.eslintignore': 'lint',
+    'tslint.json': 'lint',
     'config/test.env.js': 'unit || e2e',
     'build/webpack.test.conf.js': "unit && runner === 'karma'",
     'test/unit/**/*': 'unit',
