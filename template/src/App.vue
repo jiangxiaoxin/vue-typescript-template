@@ -9,17 +9,11 @@
   </div>
 </template>
 
-<script>
-{{#unless router}}
-import HelloWorld from './components/HelloWorld'
+<script lang="ts">
+import { Component, Vue } from 'vue-property-decorator';
 
-{{/unless}}
-export default {
-  name: 'App'{{#router}}{{else}},
-  components: {
-    HelloWorld
-  }{{/router}}
-};
+@Component
+export default class Home extends Vue {}
 </script>
 
 <style>
