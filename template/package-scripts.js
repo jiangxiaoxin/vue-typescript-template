@@ -22,7 +22,7 @@ module.exports = {
     },
     {{/if_or}}
     {{#lint}}
-    lint: 'eslint --ext .js,.vue src{{#unit}} test/unit{{/unit}}{{#e2e}} test/e2e/specs{{/e2e}}',
+    lint: './node_modules/.bin/tslint -c tslint.json "src/**/*.ts"',
     {{/lint}}
     build: 'node build/build.js'
   }
