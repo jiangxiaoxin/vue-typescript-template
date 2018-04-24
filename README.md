@@ -1,66 +1,61 @@
-# vue-webpack-boilerplate
+<p align="center">
+  <img src="./w3tec-logo.png" alt="w3tec" width="400" />
+</p>
 
-> A full-featured Webpack setup with hot-reload, lint-on-save, unit testing & css extraction.
+<h1 align="center">Vue Typescript Template</h1>
 
-> This template is Vue 2.0 compatible. For Vue 1.x use this command: `vue init webpack#1.0 my-project`
+<p align="center">
+  <b>A full featured <a href="https://github.com/vuejs/vue-cli">vue-cli</a> TypeScript and Webpack template for Vue.js 2.0</b>
+  </br></br>
+  <span>
+    Inspired by official <a href="https://github.com/vuejs-templates/webpack">Vue.js Webpack template</a>
+  </span>
+  </br>
+</p>
 
-## Documentation
+<br />
 
-- [For this template](http://vuejs-templates.github.io/webpack): common questions specific to this template are answered and each part is described in greater detail
-- [For Vue 2.0](http://vuejs.org/guide/): general information about how to work with Vue, not specific to this template
+![divider](./w3tec-divider.png)
 
-## Usage
+## ❯ Why
 
-This is a project template for [vue-cli](https://github.com/vuejs/vue-cli). **It is recommended to use npm 3+ for a more efficient dependency tree.**
+Our main goal with this project is to provide you a feature complete Vue.js template.
+We like you to be focused on your business and not spending hours in project configuration.
 
-``` bash
-$ npm install -g vue-cli
-$ vue init webpack my-project
-$ cd my-project
-$ npm install
-$ npm run dev
+Try it!! We are happy to hear your feedback or any kind of new features.
+
+![divider](./w3tec-divider.png)
+
+## ❯ Table of Contents
+
+- [Getting Started](#-getting-started)
+
+![divider](./w3tec-divider.png)
+
+## ❯ Getting Started
+
+### Step 1: Set up the Development Environment
+
+You need to set up your development environment before you can do anything.
+
+Install [Node.js and NPM](https://nodejs.org/en/download/)
+
+- on OSX use [homebrew](http://brew.sh) `brew install node`
+- on Windows use [chocolatey](https://chocolatey.org/) `choco install nodejs`
+
+### Step 2: Download vue-cli
+
+Download <a href="https://github.com/vuejs/vue-cli">vue-cli</a>
+
+```bash
+npm install -g vue-cli
 ```
 
-This will scaffold the project using the `master` branch. If you wish to use the latest version of the webpack template, do the following instead:
+### Step 3: Init new Project
 
-``` bash
-$ vue init webpack#develop my-project
+Create a new Vue.js project based on this template and follow wizard instructions.
+
+```bash
+vue init w3tecch/vue-typescript-template my-project-name
 ```
 
-:warning: **The develop branch is not considered stable and can contain bugs or not build at all, so use at your own risk.**
-
-The development server will run on port 8080 by default. If that port is already in use on your machine, the next free port will be used.
-
-## What's Included
-
-- `npm run dev`: first-in-class development experience.
-  - Webpack + `vue-loader` for single file Vue components.
-  - State preserving hot-reload
-  - State preserving compilation error overlay
-  - Lint-on-save with ESLint
-  - Source maps
-
-- `npm run build`: Production ready build.
-  - JavaScript minified with [UglifyJS v3](https://github.com/mishoo/UglifyJS2/tree/harmony).
-  - HTML minified with [html-minifier](https://github.com/kangax/html-minifier).
-  - CSS across all components extracted into a single file and minified with [cssnano](https://github.com/ben-eb/cssnano).
-  - Static assets compiled with version hashes for efficient long-term caching, and an auto-generated production `index.html` with proper URLs to these generated assets.
-  - Use `npm run build --report`to build with bundle size analytics.
-
-- `npm run unit`: Unit tests run in [JSDOM](https://github.com/tmpvar/jsdom) with [Jest](https://facebook.github.io/jest/), or in PhantomJS with Karma + Mocha + karma-webpack.
-  - Supports ES2015+ in test files.
-  - Easy mocking.
-
-- `npm run e2e`: End-to-end tests with [Nightwatch](http://nightwatchjs.org/).
-  - Run tests in multiple browsers in parallel.
-  - Works with one command out of the box:
-    - Selenium and chromedriver dependencies automatically handled.
-    - Automatically spawns the Selenium server.
-
-### Fork It And Make Your Own
-
-You can fork this repo to create your own boilerplate, and use it with `vue-cli`:
-
-``` bash
-vue init username/repo my-project
-```
